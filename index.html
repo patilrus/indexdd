@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>website</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <section id="tecnology">
+      <img src="mobile.logo.jpg" class="logo">
+      <div class="mobiletext">
+          <h1>POCO Mobile</h1>
+          <p>Indian new mobile luncher POCO mobile</p>
+          <div class="mobile-btn">
+              <a href="#"><span></span>Find Out</a>
+              <a href="#"><span></span>Read More</a>
+          </div>
+      </div>  
+    </section>
+    <div id="mobileside">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</li>
+                <li><a href="#">FEATURES</li>
+                <li><a href="#">SERVICES</li>
+                <li><a href="#">ABOUT</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="menubotton.png" id="menu">
+    </div>
+
+        <!-- features -->
+
+        <section id="Feature">
+            <div class="secondtext">
+                <p>Feature</p>
+                    <h1>Why choose us</h1>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var mobileside = document.getElementById("mobileside")
+        var menu = document.getElementById("menu")
+
+        mobileside.style.right = "-250px";
+
+        menubtn.onclick = function(){
+            if(mobileside.style.right == "-250px"){
+                mobileside.style.right = "0";
+                menu.src = "close.png";
+            }
+            else{
+                mobileside.style.right = "-250px";
+                menu.src = "close.menu";
+            }
+        }
+    </script>
+</body>
+</html>
